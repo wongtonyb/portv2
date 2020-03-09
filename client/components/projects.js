@@ -5,7 +5,7 @@ class Projects extends Component {
     return (
       <div className="comp has-overlay" id="projects">
         {/* <h1>PROJECTS</h1> */}
-        <div className="project-container">
+        <div id="project-container">
           <div className="indv-projects">
             <img className="project-img" src="./assets/projects/postar.jpg" />
             <div className="summary">

@@ -48,6 +48,52 @@ body {
 }
 
 /* Projects */
+#projects {
+  background-color: #aaa0a0;
+}
+
+#project-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.indv-projects {
+  display: flex;
+  border: 1px solid black;
+}
+
+.project-img {
+  width: 40%;
+}
+
+.summary {
+  padding: 3% 6%;
+  width: 60%;
+}
+
+.summary h1 {
+  font-size: 36px;
+}
+
+.summary h3 {
+  font-size: 28px;
+}
+
+.summary p {
+  font-size: 22px;
+}
+
+.links-container {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.project-link {
+  font-size: 22px;
+  color: black;
+  text-decoration: none;
+}
 
 /* About */
 #about {
@@ -105,7 +151,7 @@ body {
 }
 
 .about-links:hover {
-  color: white;
+  color: wheat;
 }
 
 .about-icons {
