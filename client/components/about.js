@@ -6,7 +6,7 @@ export default class About extends Component {
       <div className="comp has-overlay" id="about">
         <h1>About Me</h1>
         <div id="about-container">
-          <div className="col">
+          <div className="col col1">
             <h3>Background</h3>
             <p>
               Since a young age I was always fascinated by technology. I was
@@ -32,7 +32,7 @@ export default class About extends Component {
               the gym, exploring new resturants, or planning my next travels.
             </p>
           </div>
-          <div className="col">
+          <div className="col col2">
             <h3>Education</h3>
             <p>
               <span>Fullstack Academy</span> <br />
@@ -50,10 +50,9 @@ export default class About extends Component {
               Mathematics for Engineering, Design Process & Methods
             </p>
           </div>
-          <div className="col">
+          <div className="col col3">
             <h3>Contact</h3>
             <img src="./assets/etc/about-me.jpg" id="about-pp" />
-            <br />
             <a
               href="https://www.linkedin.com/in/wongtonyb/"
               className="about-links"
@@ -64,11 +63,11 @@ export default class About extends Component {
               />
               | LinkedIn
             </a>
-            <br />
+
             <a href="https://github.com/wongtonyb" className="about-links">
               <i className="fab fa-github about-icons" />| Github
             </a>
-            <br />
+
             <a href="./assets/etc/TonyWong-Resume.pdf" className="about-links">
               <i className="far fa-file-alt about-icons" />| Resume
             </a>
