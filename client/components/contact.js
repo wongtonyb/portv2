@@ -29,7 +29,7 @@ export default class Contact extends Component {
       if (xhr.readyState !== XMLHttpRequest.DONE) return;
       if (xhr.status === 200) {
         form.reset();
-        this.setState({ status: "SUCCESS" });
+        this.setState({ name: "", email: "", message: "", status: "SUCCESS" });
       } else {
         this.setState({ status: "ERROR" });
       }
@@ -87,6 +87,22 @@ export default class Contact extends Component {
                 SEND
               </button>
             </div>
+            {this.state.status === "SUCCESS" ? (
+              <p id="contact-success">
+                Your email has been recieved, I'll get back to you as soon as
+                possible!
+              </p>
+            ) : (
+              <div></div>
+            )}
+            {this.state.status === "ERROR" ? (
+              <p id="contact-error">
+                Sorry, something went wrong, try emailing me directly at{" "}
+                <a href="mailto:wongtonyb@gmail.com">wongtonyb@gmail.com</a>
+              </p>
+            ) : (
+              <div></div>
+            )}
           </form>
         </div>
       </div>

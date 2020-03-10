@@ -9,7 +9,7 @@ class Menu extends Component {
           <i className="fas fa-bars fa-lg"></i>
         </div>
         <div id="menu">
-          <i className="fas fa-times fa-2x"></i>
+          <i className="fas fa-times fa-3x"></i>
           <ul>
             <li>
               <a href="#home" className="menu-links">

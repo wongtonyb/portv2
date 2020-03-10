@@ -3,17 +3,16 @@ $(document).ready(function() {
 
   // hide .navbar first
   $("#nav").hide();
-  $("#menubar").hide();
 
   // fade in .navbar
   $(function() {
     $(window).scroll(function() {
       // set distance user needs to scroll before we start fadeIn
       var homevh = $("#home").height(); // == 100vh
-      if ($(this).scrollTop() >= homevh - 50) {
-        $("#nav, #menubar").fadeIn(200);
+      if ($(this).scrollTop() >= homevh + 115) {
+        $("#nav").fadeIn(200);
       } else {
-        $("#nav, #menubar").fadeOut(200);
+        $("#nav").fadeOut(200);
       }
     });
   });

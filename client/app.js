@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import {
+  Nav,
   Menu,
   Home,
   Technologies,
@@ -13,6 +14,7 @@ import {
 const App = () => {
   return (
     <Router>
+      <Nav />
       <Menu />
       <Home />
       <Technologies />

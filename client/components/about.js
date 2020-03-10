@@ -37,8 +37,9 @@ export default class About extends Component {
             <p>
               <span>Fullstack Academy</span> <br />
               15-weeks full-time software engineering immersive web development
-              bootcamp. Coursework: CSS (flexbox), SQL, React, Redux, TDD,
-              algorithms, agile methodologies, and development best practices.
+              bootcamp. Coursework: CSS (flexbox), SQL, React, Redux, RESTful
+              API, TDD, algorithms, data structures, agile methodologies, and
+              development best practices.
             </p>
             <p>
               <span>University at Buffalo</span>

@@ -4,6 +4,7 @@
  * having to figure out which file they belong to!
  */
 
+export { default as Nav } from "./nav";
 export { default as Menu } from "./menu";
 export { default as Home } from "./home";
 export { default as Technologies } from "./technologies";
