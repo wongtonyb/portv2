@@ -42,13 +42,12 @@ export default class Contact extends Component {
     return (
       <div className="comp has-overlay" id="contact">
         <h1>Get In Touch</h1>
-        <div
-          id="form"
-          onSubmit={this.submitForm}
-          action="https://formspree.io/mqkbvowo"
-          method="POST"
-        >
-          <form>
+        <div id="form">
+          <form
+            onSubmit={this.submitForm}
+            action="https://formspree.io/mqkbvowo"
+            method="POST"
+          >
             <div className="fields">
               <input
                 type="text"
