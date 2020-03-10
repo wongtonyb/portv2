@@ -13,6 +13,40 @@ body {
 /* Menu */
 
 /* Home */
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #474853;
+  padding: 3% 5%;
+  padding-bottom: 7%;
+}
+
+#home-text-container {
+  width: 45%;
+}
+
+#home-text-container h3 {
+  width: 100%;
+  font-size: 38px;
+}
+
+#home-text-container h2 {
+  font-size: 52px;
+}
+
+#home-text-container h1 {
+  font-size: 72px;
+}
+
+#home-text-container a {
+  color: black;
+  text-decoration-style: dotted;
+}
+
+#home-text-container a:hover {
+  text-decoration: none;
+}
 
 /* Technologies */
 #technologies {
