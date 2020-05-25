@@ -7,6 +7,42 @@ class Projects extends Component {
         {/* <h1>PROJECTS</h1> */}
         <div id="project-container">
           <div className="indv-projects">
+            <div className="summary">
+              <h1>STOCFOLIO</h1>
+              <h3>(REACT, REDUX, EXPRESS, POSTGRESQL, IEX API)</h3>
+
+              <p>
+                Stocfolio is a mock stocks portfolio management web application
+                using real-time stocks data. You can search for stocks by their
+                ticker symbols, make transactions (buy/sell), view all
+                transactions to date, and view entire portfolio of stocks own
+                with current estimated value.
+                <br />
+                <br />
+              </p>
+              <div className="links-container">
+                <a
+                  href="https://github.com/wongtonyb/stocks-portfolio/blob/master/client/store/portfolio.js"
+                  className="project-link"
+                >
+                  <i className="fab fa-github links-icon" />
+                  Github
+                </a>
+                <a
+                  href="http://stocfolio.herokuapp.com/portfolio"
+                  className="project-link"
+                >
+                  <i className="fas fa-window-maximize links-icon" />
+                  Demo
+                </a>
+              </div>
+            </div>
+            <img
+              className="project-img"
+              src="./assets/projects/stocfolio.png"
+            />
+          </div>
+          <div className="indv-projects">
             <img className="project-img" src="./assets/projects/postar.jpg" />
             <div className="summary">
               <h1>POSTAR</h1>

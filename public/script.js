@@ -10,9 +10,9 @@ $(document).ready(function() {
       // set distance user needs to scroll before we start fadeIn
       var homevh = $("#home").height(); // == 100vh
       if ($(this).scrollTop() >= homevh + 115) {
-        $("#nav").fadeIn(200);
+        $("#nav, #name").fadeIn(600);
       } else {
-        $("#nav").fadeOut(200);
+        $("#nav, #name").fadeOut(600);
       }
     });
   });
