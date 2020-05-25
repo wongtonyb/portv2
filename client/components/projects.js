@@ -107,13 +107,12 @@ class Projects extends Component {
               <h1>SMILE</h1>
               <h3>(NODEJS, REACT-NATIVE, EXPO)</h3>
               <p>
-                Smile is a mobile application that uses its built-in cameras to
-                track faces, determine facial features and expressions, and
-                apply different filters based on the those features. It able to
-                detect multiple faces in a setting and calculate a smiling
-                percentage base on the person's facial features. This
-                application was built during a two-day hack-a-thon using React
-                Native and Expo.
+                Smile is a mobile application that uses the native mobile
+                cameras to track faces, determine facial features and
+                expressions, and apply different filters based on the those
+                features. It's able to detect multiple faces in a setting and
+                calculate a smiling percentage base on the person's facial
+                features.
                 <br />
                 <br />
               </p>
