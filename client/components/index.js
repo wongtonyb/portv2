@@ -4,11 +4,11 @@
  * having to figure out which file they belong to!
  */
 
-export { default as Nav } from "./nav";
-export { default as Menu } from "./menu";
-export { default as Home } from "./home";
-export { default as Technologies } from "./technologies";
-export { default as Projects } from "./projects";
-export { default as About } from "./about";
-export { default as Contact } from "./contact";
-export { default as Footer } from "./footer";
+export { default as Preload } from "./Preload";
+export { default as Navbar } from "./Navbar";
+export { default as Hero } from "./Hero";
+export { default as About } from "./About";
+export { default as Works } from "./Works";
+export { default as Projects } from "./Projects";
+export { default as Skills } from "./Skills";
+export { default as Contact } from "./Contact";

@@ -1,110 +1,34 @@
 import React, { Component } from "react";
 
 export default class Contact extends Component {
-  constructor() {
-    super();
-    this.state = {
-      name: "",
-      email: "",
-      message: "",
-      status: ""
-    };
-    this.submitForm = this.submitForm.bind(this);
-  }
-
-  handleChange(type, inp) {
-    this.setState({
-      [type]: inp.target.value
-    });
-  }
-
-  submitForm(ev) {
-    ev.preventDefault();
-    const form = ev.target;
-    const data = new FormData(form);
-    const xhr = new XMLHttpRequest();
-    xhr.open(form.method, form.action);
-    xhr.setRequestHeader("Accept", "application/json");
-    xhr.onreadystatechange = () => {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return;
-      if (xhr.status === 200) {
-        form.reset();
-        this.setState({ name: "", email: "", message: "", status: "SUCCESS" });
-      } else {
-        this.setState({ status: "ERROR" });
-      }
-    };
-    xhr.send(data);
-  }
-
   render() {
-    const { status } = this.state;
     return (
-      <div className="comp has-overlay" id="contact">
-        <h1>Get In Touch</h1>
-        <div id="form">
-          <form
-            onSubmit={this.submitForm}
-            action="https://formspree.io/mqkbvowo"
-            method="POST"
-          >
-            <div className="fields">
-              <input
-                type="text"
-                name="name"
-                placeholder="Name"
-                className="input-fields"
-                value={this.state.name}
-                onChange={this.handleChange.bind(this, "name")}
-                required
-              />
-            </div>
-            <div className="fields">
-              <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                className="input-fields"
-                value={this.state.email}
-                onChange={this.handleChange.bind(this, "email")}
-                required
-              />
-            </div>
-            <div className="fields">
-              <textarea
-                rows="14"
-                type="text"
-                name="message"
-                placeholder="Message"
-                className="input-fields"
-                value={this.state.message}
-                onChange={this.handleChange.bind(this, "message")}
-                required
-              />
-            </div>
-            <div id="submit-btn-div">
-              <button variant="primary" type="submit">
-                SEND
-              </button>
-            </div>
-            {this.state.status === "SUCCESS" ? (
-              <p id="contact-success">
-                Your email has been recieved, I'll get back to you as soon as
-                possible!
-              </p>
-            ) : (
-              <div></div>
-            )}
-            {this.state.status === "ERROR" ? (
-              <p id="contact-error">
-                Sorry, something went wrong, try emailing me directly at{" "}
-                <a href="mailto:wongtonyb@gmail.com">wongtonyb@gmail.com</a>
-              </p>
-            ) : (
-              <div></div>
-            )}
-          </form>
-        </div>
+      <div id="contact" className="main">
+        <h1 className="header">Get In Touch</h1>
+        <p>
+          I'm always open to collaborations and opportunities of any sort.
+          Whether you have a question or just want to say hi, shoot me an email
+          and I'll try my best to get back to you!
+        </p>
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/wongtonyb/">
+              <i class="devicon-linkedin-plain"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/wongtonyb">
+              <i class="devicon-github-plain"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:wongtonyb@gmail.com">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        </ul>
+        <a href='href="mailto:wongtonyb@gmail.com"'>Say Hello</a>
+        <footer>© 2020 | Designed and Built by Tony Wong</footer>
       </div>
     );
   }
